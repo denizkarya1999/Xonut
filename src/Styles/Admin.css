@@ -1,3 +1,10 @@
+body {
+  justify-content: center;
+  background-color: #F5DEB3;
+  min-height: 100vh;
+  margin: 0;
+}
+
 .admin_header {
     text-align: center;
     padding: 3px;
@@ -6,12 +13,64 @@
     background-color: #8B4513;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 5px;
   }
   
   .admin_main {
-    display: flex;
-    flex-direction: column;
+    width: auto;
+    display: grid;
+    margin-top: 10px;
+    margin: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-direction: column; 
   }
+  
+  .admin_main div {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #DCDCDC;
+    border: 4px solid #525252;
+  }
+
+  input,
+select,
+button {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
   
   .admin_footer {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -24,4 +83,5 @@
     background-color: #8B4513;
     transition: transform 0.3s ease-in-out;
     clear: both;
+    margin-top: 5px;
   }
