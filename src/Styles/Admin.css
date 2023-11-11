@@ -1,0 +1,27 @@
+.admin_header {
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 8px;
+    background-color: #8B4513;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .admin_main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .admin_footer {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #ffff;
+    text-align: center;
+    margin: 3px;
+    padding: 3px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #8B4513;
+    transition: transform 0.3s ease-in-out;
+    clear: both;
+  }
