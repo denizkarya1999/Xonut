@@ -5,14 +5,16 @@ const DonutList = ({ donuts }) => {
   return (
     <div className="donut-list">
       <div className='donut-title-box'>
-        <h2>List of Donuts</h2>
+        <h2>Donut Orders</h2>
       </div> 
       <ul className='donut-main-box'>
         {donuts.map((donut) => (
           <li key={donut.id}>
-            <span>{donut.name}</span>
-            <span>{donut.description}</span>
-            <span>{donut.price}</span>
+            <span>&nbsp;{donut.name}</span>
+            <span> | </span>
+            <span><sub><em>{donut.description}</em></sub></span>
+            <span> | </span>
+            <span><sub>${donut.price}&nbsp;</sub></span>
           </li>
         ))}
       </ul>

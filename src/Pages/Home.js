@@ -12,18 +12,20 @@ const Home = () => {
   const [donuts, setDonuts] = useState([]);
 
   useEffect(() => {
-    // Fetch data from the API (PHP)
-    // Update the donuts state
-    // Example: fetch('/api.php')
-    //   .then(response => response.json())
-    //   .then(data => setDonuts(data));
+    document.title = 'Xonut: Donut Shop by X-27 (Staff Mode)';
+    fetch('http://localhost:8080/projects/donutAPI/')
+    .then(response => response.json())
+    .then(json => {
+      setDonuts(json);
+    })
+    .catch(error => console.error('Error:', error));
   }, []);
 
   return (
   <div className='home'>
     <header>
      <div className='title-box'>
-       <h1>Xonut</h1>
+       <h1>Xonut - Staff Edition</h1>
      </div>
     </header>
     <main className="container">
